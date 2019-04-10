@@ -4,7 +4,7 @@ var mongoose = require('mongoose')
   , ttl = require('../')
   , assert = require('assert')
 
-mongoose.connect('localhost', 'mongoose_test_ttl');
+mongoose.connect('mongodb://localhost:27017/mongoose_test_ttl');
 
 var ttl_ = 1000
   , interval = 1500
